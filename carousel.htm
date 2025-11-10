@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrousel d'Images Interactif</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Carrousel d'Images</h1>
+        
+        <div class="carousel-wrapper">
+            <!-- Bouton précédent -->
+            <button class="carousel-btn carousel-btn--prev" id="prevBtn" aria-label="Image précédente">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+
+            <!-- Conteneur du carrousel -->
+            <div class="carousel-container">
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="carousel-slide">
+                        <img src="./images/ajk_nike-brendy-40231.jpeg" alt="Nike Sneakers">
+                        <div class="slide-caption">Nike Collection</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./images/black-kot-glaza-goluboi-vzglyad-temnii-155769.jpeg" alt="Chat aux yeux bleus">
+                        <div class="slide-caption">Regard Mystérieux</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./images/c1dd7ea65d1661ea863e40213322afe6.jpeg" alt="Image artistique">
+                        <div class="slide-caption">Art Moderne</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./images/cars-bmw-fari-podsvetka-avtomobil-temnii-128912.jpeg" alt="BMW avec phares">
+                        <div class="slide-caption">BMW Performance</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./images/dark-krug-krest-neon-podsvetka-temnii-84058.jpeg" alt="Néon lumineux">
+                        <div class="slide-caption">Néon Futuriste</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bouton suivant -->
+            <button class="carousel-btn carousel-btn--next" id="nextBtn" aria-label="Image suivante">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Indicateurs de navigation -->
+        <div class="carousel-indicators" id="carouselIndicators"></div>
+
+        <!-- Informations -->
+        <div class="carousel-info">
+            <span id="currentSlide">1</span> / <span id="totalSlides">5</span>
+        </div>
+
+        <!-- Contrôles additionnels -->
+        <div class="carousel-controls">
+            <button class="control-btn" id="playPauseBtn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                <span>Lecture automatique</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="carousel.js"></script>
+</body>
+</html>

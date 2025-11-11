@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES6",             // Version JS ciblée
+    "module": "ES6",             // Module JS
+    "outDir": "./dist",          // Dossier où TS compilera le JS
+    "rootDir": "./src",          // Dossier où sont tes fichiers .ts
+    "strict": true,              // Vérification stricte des types
+    "esModuleInterop": true,     // Pour importer des modules JS
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*"],       // Tous les fichiers .ts dans src
+  "exclude": ["node_modules"]
+}
